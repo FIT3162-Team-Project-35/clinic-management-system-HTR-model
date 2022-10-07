@@ -20,7 +20,7 @@ def main(Form,output_File):
         
         with open(Form, "rb") as f:
             poller = document_analysis_client.begin_analyze_document(
-                model_id="greaterPRModelNeural", document=f)
+                model_id="greaterPDModelNeural", document=f)
 
         result=poller.result()
         lst=[]
@@ -37,18 +37,11 @@ def main(Form,output_File):
         patient_info={
             "f_name":lst[0],
             "l_name":lst[1],
-            "gender":lst[2],
-            "telephone":lst[3],
-            "address":lst[4],
-            "city":lst[5],
-            "post_code":lst[6],
-            "date_of_birth":lst[7],
-            "ec_f_name":lst[8],
-            "ec_l_name":lst[9],
-            "ec_telephone":lst[10],
-            "ec_relationship":lst[11],
-            "med_details":lst[12],
-            "allergy_details":lst[13]
+            "doa":lst[2],
+            "diagnosis":lst[3],
+            "ex_notes":lst[4],
+            "nxtappdate":lst[5],
+            "doc_name":lst[6],
             }
         
         with open(output_File,"w")as outfile:

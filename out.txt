@@ -1,0 +1,1 @@
+{"f_name": "SOON", "l_name": "LAYKI", "doa": "07/10/2022", "diagnosis": "Cold, Runny Nose and Fever", "ex_notes": "Cold Medicine and Rest", "nxtappdate": "21/10/2022", "doc_name": "Dr. Fermi Pasha"}
